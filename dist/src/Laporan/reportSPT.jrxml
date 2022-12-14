@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="560" leftMargin="23" rightMargin="12" topMargin="38" bottomMargin="20" uuid="d7920704-1ab5-47c2-b0c5-bbcab861904c">
+	<property name="ireport.zoom" value="3.138428376721023"/>
+	<property name="ireport.x" value="122"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kode" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="kode_spt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$F{kode_spt}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from vsuratspt where kode_spt = $P{kode_spt}]]>
+	</queryString>
+	<field name="id_surat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_spt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="isi_dasar1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="isi_dasar2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tujuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_tujuan" class="java.util.Date"/>
+	<field name="ditetapkan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_ditetapkan" class="java.util.Date"/>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nip" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="isi_dasar1_1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{isi_dasar1}]]></variableExpression>
+	</variable>
+	<variable name="NoUrut" class="java.lang.Integer" resetType="None" incrementType="Column" calculation="Count"/>
+	<title>
+		<band height="100" splitType="Stretch">
+			<textField>
+				<reportElement x="64" y="21" width="475" height="19" uuid="4fd16bae-015b-4817-b1d2-4ed807b4dff9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DINAS KOPERASI,USAHA KECIL DAN MENENGAH"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="36" width="475" height="19" uuid="6a8d7c8c-2a86-49a6-b268-19f96b041ff6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Jln. Cut Mutia No.40 Telp. 0721- 484720-470124-473215"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="8" width="475" height="19" uuid="6b9f2f43-cac6-415b-95ef-4326d22ff1d4">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["PEMERINTAH PROVINSI LAMPUNG"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="54" width="475" height="24" uuid="c4849787-b118-4663-8aa5-e2b0e0071a14">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="4.5" lineStyle="Double" lineColor="#FFFFFF"/>
+					<topPen lineStyle="Double"/>
+					<leftPen lineStyle="Double"/>
+					<bottomPen lineWidth="4.5" lineStyle="Double" lineColor="#FFFFFF"/>
+					<rightPen lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["BANDAR LAMPUNG"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="47" y="80" width="476" height="1" uuid="cf0d65e0-c58a-4a9f-901a-7f75c36e5bc7"/>
+				<graphicElement>
+					<pen lineWidth="2.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="47" y="84" width="476" height="1" uuid="2e3822d9-1743-4d68-8ee7-48b91162f81f"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<image>
+				<reportElement stretchType="RelativeToTallestObject" x="47" y="8" width="123" height="70" uuid="c167425d-b7d4-49a9-8c5e-c4884e127d40"/>
+				<imageExpression><![CDATA["C:\\Users\\Afif\\Documents\\Project\\Desktop\\Program SPT\\src\\Assets\\Lampung.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="30" width="275" height="20" uuid="3b8705e1-857b-420b-8918-921fed37bb9e"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["NOMOR :	" + $F{no_surat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-279" y="-200" width="555" height="20" uuid="2fa618a2-35be-4f07-ae34-fb2fc68f9287"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[SURAT PERINTAH TUGAS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="408" splitType="Stretch">
+			<staticText>
+				<reportElement x="43" y="0" width="53" height="30" uuid="5026acb7-318c-4725-a93a-f8b3b5f3f47f"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[Dasar	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="123" y="0" width="404" height="30" uuid="4cc2e383-e231-4660-a3b3-4804ea49ec3a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{isi_dasar1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="30" width="404" height="32" uuid="7e9ed271-73dd-438c-adca-9f26211448f7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{isi_dasar2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="96" y="0" width="27" height="20" uuid="04e21baa-a470-459b-94a0-afce61ccce80"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="30" width="27" height="20" uuid="329d2c7e-c1a4-451f-b2b2-573119664355"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="82" width="80" height="20" uuid="a0d9def0-281c-48dc-be8f-d5fae78fe475"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="82" width="431" height="30" uuid="cc527ebc-8fc6-4a9b-90ce-9b53e3bfb3d3"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama1}.equals(null) ? "":"1.   "+$F{nama1}+"\n      Konsultan Pendamping PLUT-KUMKM Bidang "+$F{jabatan1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="62" width="555" height="20" uuid="cb772dac-ac4c-4314-bd1e-a887bbfc9448"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[MEMERINTAHKAN]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="112" width="431" height="32" uuid="27e437cb-bb1f-49bc-a247-a4c989d88d26"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama2}.equals(null) ? "":"2.   "+$F{nama2}+"\n      Konsultan Pendamping PLUT-KUMKM Bidang "+$F{jabatan2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="144" width="431" height="31" uuid="5c2fe7ff-f532-464e-8562-ddf4190345cf"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama3}.equals(null) ? "":"3.   "+$F{nama3}+"\n      Konsultan Pendamping PLUT-KUMKM Bidang "+$F{jabatan3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="175" width="431" height="31" uuid="d3d00d74-e70c-44c8-833d-46dbc02275b5"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama4}.equals(null) ? "":"4.   "+$F{nama4}+"\n      Konsultan Pendamping PLUT-KUMKM Bidang "+$F{jabatan4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="226" width="80" height="20" uuid="16a1138f-c3cb-494c-84a6-b7e548c1a6ac"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[Untuk	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="226" width="27" height="20" uuid="c130950d-034d-433e-9c2f-a0009197a447"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="275" width="27" height="20" uuid="59f8232c-6e4c-4ae9-96ad-44a1a5f76c6c"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="119" y="275" width="404" height="49" uuid="bdf35b10-4e92-46ad-b0c1-aac8d1291274"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Kepada nama tersebut di atas diberikan biaya perjalanan dinas yang dibebankan kepada Dana Dekosentrasi pada Dinas Koperasi dan UKM Provinsi Lampung."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="96" y="324" width="27" height="20" uuid="bb408d7d-b2b7-47c9-a010-cc3f7b45f5f2"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="119" y="324" width="404" height="35" uuid="ae6f1f4f-14b5-4a8b-ad2d-085c1c03869a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Melaporkan hasilnya kepada Kepala Dinas Koperasi dan UKM Provinsi Lampung"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="359" width="404" height="49" uuid="823535bd-147c-40b7-86af-0c9748b91e28"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Surat Perintah Tugas ini diberikan kepada yang bersangkutan, untuk dilaksanakan sebagaimana mestinya."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="96" y="359" width="27" height="20" uuid="f8d9c19b-0450-4a17-91d3-9e30c62c60af"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy" isBlankWhenNull="false">
+				<reportElement x="119" y="226" width="404" height="49" uuid="d8611fed-0de7-4319-b003-77edfa5e5891"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Melakukan perjalanan dinas dalam rangka pembinaan dan pendampingan kepada Koperasi dan UMKM di "+$F{tujuan}+" Pada Tanggal "+ $F{tanggal_tujuan}+"."]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="212" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="364" y="0" width="110" height="20" uuid="b31a5c0c-7c75-4292-a9b5-67894c40d8ca"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ditetapkan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="276" y="14" width="88" height="20" uuid="612322fd-d766-4933-b9f1-3a68e371f713"/>
+				<textElement>
+					<font fontName="Tahoma" size="12" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["pada tanggal 	: "]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="276" y="32" width="202" height="1" uuid="d9edf586-c764-445c-abd3-47a72d03b935"/>
+			</line>
+			<textField>
+				<reportElement x="298" y="114" width="202" height="20" uuid="07f2d8b6-3d6c-444c-881c-8684edf9a4a3"/>
+				<textElement>
+					<font fontName="Tahoma" size="12" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="127" width="202" height="20" uuid="56f0cf21-af32-41f3-ae6c-a1d45490c2f2"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="140" width="202" height="20" uuid="3438a284-524a-4595-8d33-97ff85ffc313"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["NIP. " + $F{nip}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="276" y="35" width="202" height="20" uuid="9be0a60f-29dc-4b84-884b-889333316494"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[Plt.  KEPALA DINAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="192" width="218" height="20" uuid="9baeebc9-9006-4f54-98a2-bdd92c125ec4"/>
+				<textElement>
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<text><![CDATA[1. Gubernur Lampung (sebagai laporan).]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="364" y="15" width="110" height="20" uuid="0922ffbb-5148-4ff8-a676-6ff8d4fdee8d"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_ditetapkan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="276" y="0" width="88" height="20" uuid="975a8f41-966c-450a-aa9d-93ef0f7a6b00"/>
+				<textElement>
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[Ditetapkan di	:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
